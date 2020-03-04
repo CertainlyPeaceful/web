@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #686868;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock {
+    position: relative; /* parent relative, child absolute */
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #A9A8A8;
+    box-shadow: rgba(0,0,0, 0.5);
+}
+
+/* MARKINGS */
+.twelve, .three, .six, .nine {
+    position: absolute;
+    background-color: black;
+    border-radius: 2px;
+}
+.twelve, .six {
+    width: 2.5px;
+    height: 10px;
+    margin: 0 50%;
+}
+.three, .nine {
+    width: 10px;
+    height: 2.5px;
+    margin: 50% 0;
+}
+.twelve { top: 0; }
+.six { bottom: 0; }
+.three { right: 0; }
+.six { left: 0; }
+/* ARMS */
+.hour, .minute, .second {
+    position: absolute;
+    left: 50%;
+    border-radius: 2px;
+}
+.hour {
+    height: 100px;
+    width: 3px;
+    top: 50px;
+    
+    background-color: black;
+    animation: tick 43200s infinite linear;
+    -webkit-animation: tick 43200s infinite linear;
+}
+.minute {
+    height: 120px;
+    width: 2px;
+    background-color: black;
+    top: 30px;
+    animation: tick 3600s infinite linear;
+    -webkit-animation: tick 3600s infinite linear;
+}
+.second {
+    height: 60px;
+    width: 3px;
+    top: 90px;
+
+    background-color: red;
+    animation: tick 60s infinite linear;
+    -webkit-animation: tick 60s infinite linear;
+}
+.hour, .minute, .second
+{
+    transform-origin: 2px 100%;
+    -webkit-transform-origin: 2px 100%;
+}
+/* ANIMATION */
+@keyframes tick {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+@-webkit-keyframes tick {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+}
