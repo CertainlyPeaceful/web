@@ -1,0 +1,1 @@
+const num_btn = document.querySelectorAll(".")
