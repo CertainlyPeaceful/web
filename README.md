@@ -1,6 +1,6 @@
 # Web Applications
-Creating small applications using HTML, CSS, and JavaScript
+Creating small applications using **HTML**, **CSS**, and **JavaScript**.
 
-## Apps
+## Progress Report
 * Password generator
 * Basic calculator
