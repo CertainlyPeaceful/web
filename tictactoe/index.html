@@ -4,22 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Tic Tac Toe</title>
 </head>
 
 <body>
-    <div class="game-board">
-        <button type="button" class="btn" id="top_left"></button>
-        <button type="button" class="btn" id="top_mid"></button>
-        <button type="button" class="btn" id="top_right"></button>
-        <button type="button" class="btn" id="mid_left"></button>
-        <button type="button" class="btn" id="mid_mid"></button>
-        <button type="button" class="btn" id="mid_right"></button>
-        <button type="button" class="btn" id="bot_left"></button>
-        <button type="button" class="btn" id="bot_mid"></button>
-        <button type="button" class="btn" id="bot_right"></button>
+    <div class="title-text">
+        <div id="game-title">TIC TAC TOE</div>
+        <div class="text-element"></div>
+    </div>
+    <div class="gameboard">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <div class="container">
+        <div class="result"></div>
+        <button type="button" id="reset">Reset</button>
     </div>
 </body>
 
