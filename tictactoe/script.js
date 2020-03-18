@@ -51,10 +51,10 @@ class tictactoe {
         });
     }
     end_game() {
-        if (this.is_draw())
-            this.result.innerText = "Draw!";
-        else if (this.is_winner())
+        if (this.is_winner())
             this.result.innerText = `${this.circleTurn ? "O" : "X"} wins!`;
+        else if (this.is_draw())
+            this.result.innerText = "Draw!";
         this.container.classList.add("visible"); // toggle overlay
     }
 };
